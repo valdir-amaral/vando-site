@@ -798,7 +798,7 @@ section {
         justify-content: center;
     }
     .hero-slide {
-        background-position-x: left;
+        background-position-x: left !important;
     }
     .site-header .navbar {
         min-height: 76px;
