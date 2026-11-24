@@ -28,6 +28,9 @@ html {
     scroll-padding-top: 90px;
 }
 
+body, html {
+    overflow-x: clip !important;
+}
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: var(--navy);
@@ -545,8 +548,9 @@ section {
 }
 
 .testimonial-card {
+    width: 100%;
     min-width: 0;
-    max-width: fit-content;
+    max-width: 100%;
     margin: 0;
     padding: 11px;
     overflow: hidden;
@@ -793,6 +797,9 @@ section {
     .reasons-grid li {
         justify-content: center;
     }
+    .hero-slide {
+        background-position-x: left;
+    }
     .site-header .navbar {
         min-height: 76px;
     }
@@ -970,7 +977,7 @@ section {
     .site-header .logo {
         width: 64px;
     }
-
+    
     .hero-section {
         height: 540px;
         min-height: 490px;
@@ -1102,4 +1109,9 @@ section {
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
     }
+}
+
+[data-aos="fade-left"],
+[data-aos="fade-right"] {
+    overflow-x: clip;
 }
